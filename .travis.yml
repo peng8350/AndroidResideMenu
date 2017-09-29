@@ -1,11 +1,14 @@
-language: android
-jdk: oraclejdk8
-sudo: false
-
+language: android  
 android:
   components:
     - tools
-    - build-tools-23.0.1
-    - android-22
+    - build-tools-23.0.2
+    - android-23
     - extra-android-m2repository
     - extra-android-support
+
+before_install:
+  - chmod +x gradlew
+
+script:  
+  - ./gradlew assembleRelease
