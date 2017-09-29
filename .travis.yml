@@ -11,4 +11,4 @@ android:
 
 
 script:
-    - cd ResizeMenu
+    - cd ResideMenu
